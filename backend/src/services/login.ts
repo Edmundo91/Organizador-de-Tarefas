@@ -12,9 +12,8 @@ const user = await prismaClient.user.findUnique(
 { where: {email, senha}, select: { id: true},});
 
 if(user == null){ 
-    throw Error('login inválido. Verifique se o email ou a senha estão corretos!')
+    return('n')
 }
-
 
 return{user}
 

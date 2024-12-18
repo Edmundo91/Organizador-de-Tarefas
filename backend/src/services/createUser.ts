@@ -17,7 +17,7 @@ const user = await prismaClient.user.create({
           }
      })
 
-return user
+return('cadastro efetuado')
  
 } 
 
