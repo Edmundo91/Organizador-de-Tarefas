@@ -4,6 +4,8 @@ import { FormEvent } from "react";
 import { api } from "../services/api"; 
 import { useNavigate } from "react-router-dom";
 
+
+
 export default function Home(){ 
 
 const emailRef = useRef<HTMLInputElement | null>(null) 
@@ -17,18 +19,24 @@ const logininvalido: string = "n"
 async function handleSubmit(FormEvent: FormEvent){ 
  FormEvent.preventDefault();
  
-   if(!emailRef.current?.value || !senhaRef.current?.value) return;
+ 
+   
+ if(!emailRef.current?.value || !senhaRef.current?.value) return;
     const response = await api.post("/login", {
     
      email: emailRef.current?.value, 
      senha: senhaRef.current?.value })
      console.log(response.data)
-    
+     
+     
      if(response.data === logininvalido) alert('login inválido'); 
      
      else{ 
 
-    navigate('/user')
+      
+      const id = response.data.user.id
+      
+      navigate(`/user/${id}`);
 
      }
 
@@ -38,10 +46,10 @@ return(
 <div className="bg-emerald-950 min-h-screen w-full flex justify-center">
 
 <div className="absolute bg-green-950-600 left-20 top-10">
-<TfiAgenda size={100} color="white" />
+<TfiAgenda size={100} color="black" />
 </div>
 
-<h1 className="w-90 text-xl font-medium text-white absolute top-24 left-48">Organizador de Tarefas</h1>
+<h1 className="w-90 text-xl font-medium text-black absolute top-24 left-48">Organizador de Tarefas</h1>
 
 <main className="bg-green-950 w-96 h-72 my-40 rounded-2xl border-2 border-white md:min-w-4xl absolute"> 
 <h1 className="text-3xl font-bold text-white flex justify-center my-3">Login</h1>
@@ -72,7 +80,7 @@ absolute my-2">Inscreva-se aqui</a>
 <input 
 type="submit" 
 value="entrar" 
-className="w-44 bg-white h-10 rounded-xl font-medium cursor-pointer
+className="w-44  bg-green-600 h-10 rounded-xl font-medium cursor-pointer
  border-black border-2 ml-48"
 ></input>
 </div>

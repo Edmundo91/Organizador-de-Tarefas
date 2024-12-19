@@ -29,13 +29,21 @@ export default function NovaTarefa(){
     <input 
      type="submit" 
      value="registrar tarefa" 
-     className="w-44 bg-white h-10 rounded-xl font-medium cursor-pointer
-      border-black border-2 ml-24 my-36"
+     className="w-44 h-10 rounded-xl font-medium cursor-pointer
+      border-black border-2 ml-24 my-36 bg-green-600"
+     
      ></input>
     </form>
     
     
     </div>
+    
+    
+    <div className=" w-full absolute top-96 top ml-4">
+     <a href="/user" className="font-medium text-blue-600 dark:text-blue-500 hover:underline">Retornar à página inicial</a>
+     </div>
+
+
     </main>
     
     
