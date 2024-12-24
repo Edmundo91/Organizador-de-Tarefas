@@ -10,7 +10,7 @@ async execute(autorid: number){
 
     const lista = await prismaClient.tarefas.findMany({
     where: {autorid}, 
-    select: {titulo: true, descricao:true},
+    select: {titulo: true, descricao:true, idTarefa: true },
 })
 
 return lista

@@ -15,7 +15,7 @@ autorid
 }
 })
 
-return tarefa
+return (tarefa)
 
 }
 

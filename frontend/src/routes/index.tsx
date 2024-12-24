@@ -12,7 +12,7 @@ return(
          <Route path="/" element={<Home/>}></Route>
          <Route path="/cadastro" element={<Cadastro/>}></Route>
          <Route path="/user/:id" element={<Usuario/>}></Route>
-         <Route path="/novaTarefa" element={<NovaTarefa/>}></Route>
+         <Route path=":id/novaTarefa" element={<NovaTarefa/>}></Route>
       </Routes>
 </BrowserRouter>
 
