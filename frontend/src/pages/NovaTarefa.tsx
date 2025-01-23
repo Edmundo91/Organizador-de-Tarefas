@@ -24,7 +24,7 @@ export default function NovaTarefa(){
     autorid: numId,
     }) 
     
-    alert('Tarefa Adicionada')
+    alert('Tarefa dicionada')
     window.location.reload();
     
     }
