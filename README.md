@@ -1,1 +1,1 @@
-Esse organizador de tarefas é uma aplicação fullstack. Ele só pode ser acessado através de um login, então é necessário se registrar na página de cadastro, e serve para o registro de tarefas do usuário. Ele foi construído com Postgresql, Node, React para web e React Native para mobile. 
+Esse organizador de tarefas é uma aplicação full stack. Ele só pode ser acessado através de um login, então é necessário se registrar na página de cadastro, e serve para o registro de tarefas do usuário. Ele foi construído com Postgresql, Node, React para web e React Native para mobile. 
