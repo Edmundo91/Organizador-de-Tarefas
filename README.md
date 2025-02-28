@@ -1,35 +1,26 @@
-Organizador de Tarefas
+# Organizador de Tarefas
 
 Este é um organizador de tarefas simples que permite registrar e excluir tarefas. O sistema possui autenticação com cadastro e login, além de versões web e mobile.
 
-Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
-Backend
+### Backend
+- **Node.js**
+- **TypeScript**
+- **PostgreSQL**
 
-Node.js
+### Frontend Web
+- **React**
+- **TypeScript**
 
-TypeScript
+### Mobile
+- **React Native**
+- **TypeScript**
 
-PostgreSQL
+## Funcionalidades
 
-Frontend Web
+- Cadastro de usuário
+- Login e autenticação
+- Registro de tarefas
+- Exclusão de tarefas
 
-React
-
-TypeScript
-
-Mobile
-
-React Native
-
-TypeScript
-
-Funcionalidades
-
-Cadastro de usuário
-
-Login e autenticação
-
-Registro de tarefas
-
-Exclusão de tarefas
