@@ -1,1 +1,35 @@
-Esse organizador de tarefas é uma aplicação full stack Web e Mobile. Ele só pode ser acessado através de um login, então é necessário se registrar na página de cadastro, e serve para o registro de tarefas do usuário. Ele foi construído com Postgresql, Node, React para web e React Native para mobile. 
+Organizador de Tarefas
+
+Este é um organizador de tarefas simples que permite registrar e excluir tarefas. O sistema possui autenticação com cadastro e login, além de versões web e mobile.
+
+Tecnologias Utilizadas
+
+Backend
+
+Node.js
+
+TypeScript
+
+PostgreSQL
+
+Frontend Web
+
+React
+
+TypeScript
+
+Mobile
+
+React Native
+
+TypeScript
+
+Funcionalidades
+
+Cadastro de usuário
+
+Login e autenticação
+
+Registro de tarefas
+
+Exclusão de tarefas
